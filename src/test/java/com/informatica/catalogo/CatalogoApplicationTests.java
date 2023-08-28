@@ -13,7 +13,7 @@ class CatalogoApplicationTests {
 		ProdutoModel produtoModel = new ProdutoModel();
 		produtoModel.setFabricante("Intel");
 
-		Assertions.assertEquals(produtoModel.getFabricante(), "AMD");
+		Assertions.assertEquals("Intel", produtoModel.getFabricante());
 	}
 
 }
