@@ -1,9 +1,11 @@
 package com.informatica.catalogo.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.util.UUID;
 
@@ -12,7 +14,8 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ProdutoModel {
+@AllArgsConstructor
+public class ProdutoModel extends RepresentationModel<ProdutoModel> {
 
     @Column
     @Id
